@@ -1,5 +1,12 @@
 function stringChop(str, size) {
-  // your code here
+  let res = [];
+  let n = str.length;
+  let i = 0;
+  while (i < n) {
+    res.push(str.substr(i, size));
+    i += size;
+  }
+  return res;
 }
 
 // Do not change the code below
